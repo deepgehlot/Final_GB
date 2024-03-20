@@ -13,698 +13,234 @@
     <link rel="stylesheet" type="text/css" href="css/slick.css">
     <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
     <link rel="icon" href="images/favicon.png" type="image/x-icon">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-    <!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
-    <!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
+    <style>
+        body {
+            font-family: "Raleway", sans-serif !important;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        footer {
+            margin-top: auto;
+        }
+        
+        @media only screen and (min-width: 1000px) {
+            .container-fluid {
+                width: 80%
+            }
+        }
+        
+        @media only screen and (max-width: 800px) {
+            .bg {
+                width: 100% !important;
+                margin: 0 !important;
+                height: 100% !important;
+            }
+            .column_1 {
+                width: 100%;
+            }
+            .main_video {
+                width: auto !important;
+            }
+        }
+        
+        .raleway-bold {
+            font-family: "Raleway", sans-serif !important;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+        }
+        
+        .raleway-normal {
+            font-family: "Raleway", sans-serif !important;
+            font-optical-sizing: auto;
+            font-weight: 300;
+            font-style: normal;
+            color: black;
+        }
+        /* .parallax {
+           
+            min-height: 100%;
+            width: 100%;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            z-index: 1;
+        } */
+        
+        .bg {
+            position: absolute;
+            top: calc((100% + 800px) * 0.5);
+            left: 0;
+            height: 70%;
+            width: calc((100% + 600px) * 0.5);
+            background-color: rgba(255, 255, 255, 0.8);
+            margin: 10px calc((100% - 960px) * 0.5);
+            justify-content: center;
+            display: flex;
+            z-index: 1;
+        }
+        
+        .nav-link {
+            font-weight: 600;
+        }
+        
+        .main_video {
+            width: 100%;
+            position: fixed;
+            z-index: 0;
+        }
+    </style>
 </head>
 
 <body>
-    <div class="page-wrapper">
 
-        <header class="main-header header-style-two">
-            <div class="auto-container">
-                <div class="main-box">
-                    <div class="logo-box">
-                        <div class="logo">
-                            <a href="index.html"><img src="images/logo.png" alt="" title="Tronis" style="height: 80px;">
-                            </a>
+    <header class="main-header header-style-two">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light d-flex" style='justify-content: space-around;'>
+            <div class="container-fluid">
+                <div class="logo-box">
+                    <div class="logo">
+                        <a href="index.html"><img src="images/logo.png" alt="" title="Tronis" style="height: 80px;">
+                        </a>
+                    </div>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+
+
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex" style="flex: auto; justify-content: end;">
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Rooms</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Restaurant</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+
+
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+
+
+
+    <video class="main_video" autoplay="autoplay" loop="loop" muted defaultMuted playsinline oncontextmenu="return false;" preload="auto">
+            <source src="./images/video1.mp4" type="video/mp4">
+        </video>
+
+    <div class="bg">
+        <div class="row p-5">
+            <div class="col-7 col-sm-6 column_1">
+                <h3 class="text-center raleway" style=" color:black;">
+                    Govind Bagh Resort
+                </h3>
+                <p class="raleway-normal" style="text-align: justify;">Far from the maze of heartless city like other resorts in jodhpur, away from the hazardous polluted and mismanaged city life. Govind bagh. The resort offers 10 well equipped historical rajasthani crafted rooms. A visit to, the ethnic resort,
+                    Would be like an unforgettable journey to a dreamland Jodhpuri, the ethnic resort is an ecologically balanced artistic venture that is there in purlieus of nature and has an ethnic beauty about Jodhpur.</p>
+            </div>
+            <div class="col-5 col-sm-6 column_1">
+                <img class="img-fluid" src="./images/banner/gallery11.JPG" style="width: 297px; height: 338px;">
+            </div>
+        </div>
+
+    </div>
+    <footer class="main-footer footer-style-two" style="top: 160vh;">
+
+        <div class="widgets-section">
+            <div class="container">
+                <div class="row">
+
+                    <div class="footer-column col-lg-5 col-sm-6">
+                        <div class="footer-widget about-widget wow fadeInLeft">
+                            <div class="widget-content">
+                                <div class="logo">
+                                    <a href="#"><img src="./images/logo.png" style="max-height: 15vh;">
+                                    </a>
+                                </div>
+                                <div class="text">Welcome to the best five-star deluxe hotel in New York. <br> Hotel elementum sesue the aucan volutpat.</div>
+                                <ul class="social-icon-two">
+                                    <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
 
-                    <!-- <div class="nav-outer">
-                        <nav class="nav main-menu">
-                            <ul class="navigation">
-                                <li><a href="#">Home</a>
-                                </li>
-                                <li class="dropdown"><a href="#">Rooms & Suites</a>
-                                    <ul>
-                                        <li><a href="page-rooms.html">Rooms</a></li>
-                                        <li><a href="page-rooms-suite.html">Rooms and Suits</a></li>
-                                        <li><a href="room-details.html">Room Details</a></li>
-                                    </ul>
-                                </li>
-                                <li class="dropdown"><a href="#">Pages</a>
-                                    <ul>
-                                        <li><a href="page-about.html">About</a></li>
-                                        <li><a href="page-contact.html">Contact</a></li>
-                                        <li><a href="page-faq.html">Faq</a></li>
-                                        <li><a href="page-pricing.html">Pricing</a></li>
-                                        <li><a href="page-testimonial.html">Testimonials</a></li>
-                                        <li><a href="page-404.html">404</a></li>
-                                        <li class="dropdown"><a href="#">Team</a>
-                                            <ul>
-                                                <li><a href="page-team.html">Team List</a></li>
-                                                <li><a href="page-team-details.html">Team Details</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="dropdown"><a href="#">Shop</a>
-                                            <ul>
-                                                <li><a href="shop-products.html">Products</a></li>
-                                                <li><a href="shop-products-sidebar.html">Products with Sidebar</a></li>
-                                                <li><a href="shop-product-details.html">Product Details</a></li>
-                                                <li><a href="shop-cart.html">Cart</a></li>
-                                                <li><a href="shop-checkout.html">Checkout</a></li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="dropdown"><a href="#">News</a>
-                                    <ul>
-                                        <li><a href="news-grid.html">News Grid</a></li>
-                                        <li><a href="news-details.html">News Details</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="page-contact.html">Contact</a></li>
-                            </ul>
-                        </nav>
-                    </div> -->
-                    <!-- <div class="mobile-nav-toggler"><span class="icon lnr-icon-bars"></span></div> -->
-                    <div class="outer-box">
-
-                        <div class="mobile-nav-toggler"><i class="icon fa fa-bars"></i></div>
-
-                    </div>
-                </div>
-
-                <div class="mobile-menu">
-                    <div class="menu-backdrop"></div>
-
-                    <nav class="menu-box">
-                        <div class="upper-box">
-                            <div class="nav-logo">
-                                <a href="index.html"><img src="images/logo.png" style="height: 80px;"></a>
-                            </div>
-                            <div class="close-btn"><i class="icon fa fa-times"></i></div>
-                        </div>
-                        <ul class="navigation clearfix">
-
-                            <li><a href="#">Home</a>
-                            </li>
-                            <li><a href="#">About</a>
-                            </li>
-                            <li><a href="#">Rooms</a>
-                            </li>
-                            <li><a href="#">Restaurant</a>
-                            </li>
-                            <li><a href="#">Gallery</a>
-                            </li>
-                            <li><a href="#">Contact</a>
-                            </li>
-
-
-                        </ul>
-                        <ul class="contact-list-one">
-                            <li>
-
-                                <div class="contact-info-box">
-                                    <i class="icon lnr-icon-phone-handset"></i>
-                                    <span class="title">Call Now</span>
-                                    <a href="tel:+92880098670">+92 (8800) - 98670</a>
-                                </div>
-                            </li>
-                            <li>
-
-                                <div class="contact-info-box">
-                                    <span class="icon lnr-icon-envelope1"></span>
-                                    <span class="title">Send Email</span>
-                                    <a href="https://html.kodesolution.com/cdn-cgi/l/email-protection#a3cbc6cfd3e3c0ccced3c2cdda8dc0ccce"><span class="__cf_email__" data-cfemail="5f373a332f1f3c30322f3e3126713c3032">[email&#160;protected]</span></a>
-                                </div>
-                            </li>
-                            <li>
-
-                                <div class="contact-info-box">
-                                    <span class="icon lnr-icon-clock"></span>
-                                    <span class="title">Send Email</span> Mon - Sat 8:00 - 6:30, Sunday - CLOSED
-                                </div>
-                            </li>
-                        </ul>
-                        <ul class="social-links">
-                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                        </ul>
-                    </nav>
-                </div>
-
-
-
-
-                <!-- <div class="sticky-header">
-                    <div class="auto-container">
-                        <div class="inner-container">
-
-                            <div class="logo">
-                                <a href="index.html" title><img src="images/logo.png"></a>
-                            </div>
-
-                            <div class="nav-outer">
-
-                                <nav class="main-menu">
-                                    <div class="navbar-collapse show collapse clearfix">
-                                        <ul class="navigation clearfix">
-
-                                        </ul>
+                    <div class="footer-column col-lg-4 col-sm-6 mb-0 ">
+                        <div class="footer-widget links-widget wow fadeInLeft mt-5" data-wow-delay="200ms">
+                            <h4 class="widget-title">Contact us to Book Now</h4>
+                            <div class="widget-content">
+                                <article class="recent-post">
+                                    <div class="inner">
+                                        <div class="post-info"><i class="fas fa-phone"></i> +91 9950620621<br> +91 2912545621
+                                        </div>
+                                        <div class="post-info"><i class="fa fa-envelope"></i>
+                                            <a href="mailto:contact@govindbagh.com">contact@govindbagh.com</a>
+                                        </div>
                                     </div>
-                                </nav>
-
-                                <div class="mobile-nav-toggler"><span class="icon lnr-icon-bars"></span></div>
+                                </article>
                             </div>
                         </div>
                     </div>
-                </div> -->
-            </div>
-        </header>
 
 
-        <section class="banner-section-two">
-            <div class="banner-slider">
-                <div class="banner-slide-v2">
-                    <div class="outer-box">
-                        <figure class="image wow fadeInUp"><img src="images/banner/banner1.JPG"></figure>
-                        <div class="content-box">
-                            <span class="sub-title" data-animation-in="fadeInUp" data-delay-in="0.1">unique place and luxury hotel</span>
-                            <h1 data-animation-in="fadeInUp" data-delay-in="0.3">life enjoy with <br>the great moments</h1>
-                            <a href="page-about.html" class="btn" data-animation-in="fadeInUp" data-delay-in="0.5">rooms & suites</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="banner-slide-v2">
-                    <div class="outer-box">
-                        <figure class="image wow fadeInUp"><img src="images/banner/banner2.JPG"></figure>
-                        <div class="content-box">
-                            <span class="sub-title" data-animation-in="fadeInUp" data-delay-in="0.1">unique place and luxury hotel</span>
-                            <h1 data-animation-in="fadeInUp" data-delay-in="0.3">life enjoy with <br>the great moments</h1>
-                            <a href="page-about.html" class="btn" data-animation-in="fadeInUp" data-delay-in="0.5">rooms & suites</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="banner-slide-v2">
-                    <div class="outer-box">
-                        <figure class="image wow fadeInUp"><img src="images/banner/banner3.JPG"></figure>
-                        <div class="content-box">
-                            <span class="sub-title" data-animation-in="fadeInUp" data-delay-in="0.1">unique place and luxury hotel</span>
-                            <h1 data-animation-in="fadeInUp" data-delay-in="0.3">life enjoy with <br>the great moments</h1>
-                            <a href="page-about.html" class="btn" data-animation-in="fadeInUp" data-delay-in="0.5">rooms & suites</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
 
-        <div class="checkout-form-section v2 wow slideInUp">
-            <div class="auto-container">
-                <div class="checkout-form">
-                    <div class="checkout-field">
-                        <h6>Check in</h6>
-                        <div class="chk-field">
-                            <input class="date-pick" type="text" placeholder="20 June, 2023" />
-                            <i class="fa fa-calendar"></i>
+                    <div class="footer-column col-lg-3 col-sm-6">
+                        <div class="footer-widget blog-widget wow fadeInLeft mt-5" data-wow-delay="400ms">
+                            <h4 class="widget-title">Directions</h4>
+                            <div class="widget-content">
+
+                                <article class="recent-post">
+                                    <div class="inner">
+
+                                        <div class="post-info"><i class="fas fa-location"></i> Khasra no. 453/3 opposite fintech university karwar, Jodhpur , Rajasthan,342037.</div>
+                                    </div>
+                                </article>
+                            </div>
                         </div>
                     </div>
-                    <div class="checkout-field">
-                        <h6>Check out</h6>
-                        <div class="chk-field">
-                            <input class="date-pick" type="text" placeholder="20 June, 2023" />
-                            <i class="fa fa-calendar"></i>
-                        </div>
-                    </div>
-                    <div class="checkout-field br-0">
-                        <h6>Room</h6>
-                        <div class="chk-field">
-                            <i class="fa fa-angle-down"></i>
-                            <select>
-<option>Standard Room Size </option>
-<option>Standard Room Size </option>
-<option>Standard Room Size </option>
-<option>Standard Room Size </option>
-</select>
-                        </div>
-                    </div>
-                    <a href class="theme-btn btn-style-one"><span class="btn-title">Enquire now</span></a>
                 </div>
             </div>
         </div>
 
-        <section class="about-section-two">
-            <div class="auto-container">
-                <div class="row">
-
-                    <div class="content-column col-lg-7 wow fadeInRight" data-wow-delay="600ms">
-                        <div class="inner-column">
-                            <div class="sec-title">
-                                <span class="sub-title">Govind Bagh Heritage Resort</span>
-                                <h2>We Provide Outdoor <br>Activities To All Visitors</h2>
-                                <div class="text">San Francisco has hills with views, the coast, excellent food & <br>has been voted the happiest, healthiest and fittest city in the <br>States many times.</div>
-                            </div>
-                            <div class="outer-box">
-                                <div class="info-block">
-                                    <div class="inner">
-                                        <div class="icon-box"><i class="flaticon-light"></i></div>
-                                        <h4 class="title">The Best <br>Lighting</h4>
-                                    </div>
-                                </div>
-                                <div class="info-block">
-                                    <div class="inner">
-                                        <div class="icon-box"><i class="flaticon-pool"></i></div>
-                                        <h4 class="title">The Best <br>Swiming</h4>
-                                    </div>
-                                </div>
-                            </div>
-                            <ul class="list-style-two">
-                                <li><i class="icon fa fa-circle-check"></i>It is a long fact that a reader will be distracted by the readable</li>
-                                <li><i class="icon fa fa-circle-check"></i>Lorem Ipsum is simply dummy of the printing and industry</li>
-                                <li><i class="icon fa fa-circle-check"></i>There are many variations of Lorem Ipsum majority</li>
-                            </ul>
-                            <div class="btn-box">
-                                <a href="page-about.html" class="theme-btn btn-style-one"><span class="btn-title">Discover More</span></a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="image-column col-lg-5">
-                        <div class="inner-column wow fadeInLeft">
-                            <figure class="image-1 overlay-anim wow fadeInUp"><img src="images/other/home_about_2.JPG"></figure>
-                            <figure class="image-2 overlay-anim wow fadeInLeft"><img src="images/other/home_about_1.JPG"></figure>
-                            <div class="exp-box bounce-y">
-                                <figure class=" overlay-anim wow fadeInLeft"><img data-cfsrc="images/resource/exp-icon.png" alt style="display:none;visibility:hidden;"><noscript><img src="images/resource/exp-icon.png" alt></noscript></figure>
-                                <h4 class="title">Luxury Room</h4>
-                                <div class="text">Donec in quis the asd <br>pellentesque velit. Donec id <br>velit arcu posuere blane.</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
 
 
-        <section class="service-section-two pt-40">
-            <div class="auto-container">
-                <div class="sec-title text-center wow fadeInUp"> <span class="sub-title">Govind Bagh SERVICES</span>
-                    <h2>Resort Facilities</h2>
-                </div>
-                <div class="row">
-
-                    <div class="service-block-two col-lg-4 col-sm-6">
-                        <div class="inner-box wow fadeInLeft">
-                            <div class="image-box">
-                                <div class="icon-box wow fadeInUp"><i class="flaticon-bed-2"></i></div>
-                                <h4 class="title"><a href="page-service-details.html">Room Service</a></h4>
-                            </div>
-                            <div class="content-box">
-                                <div class="text">Orci varius natoque penatibus magnis ders disney parturient ridiculus</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="service-block-two col-lg-4 col-sm-6">
-                        <div class="inner-box wow fadeInLeft">
-                            <div class="image-box">
-                                <div class="icon-box wow fadeInUp"><i class="flaticon-bed-2"></i></div>
-                                <h4 class="title"><a href="page-service-details.html">Room Service</a></h4>
-                            </div>
-                            <div class="content-box">
-                                <div class="text">Orci varius natoque penatibus magnis ders disney parturient ridiculus</div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="service-block-two col-lg-4 col-sm-6">
-                        <div class="inner-box wow fadeInLeft" data-wow-delay="200ms">
-                            <div class="image-box">
-                                <div class="icon-box wow fadeInUp"><i class="flaticon-swimming-pool"></i></div>
-                                <h4 class="title"><a href="page-service-details.html">Swimming Pool</a></h4>
-                            </div>
-                            <div class="content-box">
-                                <div class="text">Orci varius natoque penatibus magnis ders disney parturient ridiculus</div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="service-block-two col-lg-4 col-sm-6">
-                        <div class="inner-box wow fadeInLeft" data-wow-delay="300ms">
-                            <div class="image-box">
-                                <div class="icon-box wow fadeInUp"><i class="flaticon-car"></i></div>
-                                <h4 class="title"><a href="page-service-details.html">Parking Space</a></h4>
-                            </div>
-                            <div class="content-box">
-                                <div class="text">Orci varius natoque penatibus magnis ders disney parturient ridiculus</div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="service-block-two col-lg-4 col-sm-6">
-                        <div class="inner-box wow fadeInLeft" data-wow-delay="400ms">
-                            <div class="image-box">
-                                <div class="icon-box wow fadeInUp"><i class="flaticon-breakfast"></i></div>
-                                <h4 class="title"><a href="page-service-details.html">Breakfast</a></h4>
-                            </div>
-                            <div class="content-box">
-                                <div class="text">Orci varius natoque penatibus magnis ders disney parturient ridiculus</div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="service-block-two col-lg-4 col-sm-6">
-                        <div class="inner-box wow fadeInLeft" data-wow-delay="500ms">
-                            <div class="image-box">
-                                <div class="icon-box wow fadeInUp"><i class="flaticon-travel"></i></div>
-                                <h4 class="title"><a href="page-service-details.html">Pick Up & Drop</a></h4>
-                            </div>
-                            <div class="content-box">
-                                <div class="text">Orci varius natoque penatibus magnis ders disney parturient ridiculus</div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="service-block-two col-lg-4 col-sm-6">
-                        <div class="inner-box-two wow fadeInLeft" data-wow-delay="600ms">
-                            <div class="image-box">
-                                <figure class="image wow fadeInUp overlay-anim"><img data-cfsrc="images/resource/service2-1.jpg" alt style="display:none;visibility:hidden;"><noscript><img src="images/resource/service2-1.jpg" alt></noscript></figure>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
-        <section class="pricing-section-two pt-0">
-            <div class="auto-container">
-                <div class="sec-title text-center"> <span class="sub-title">Best Heritage</span>
-                    <h2>The Best Heritage Rooms <br> And Suites</h2>
-                </div>
-                <div class="row">
-
-                    <div class="pricing-block-two col-sm-6">
-                        <div class="inner-box">
-                            <div class="row">
-                                <div class="content-column col-lg-4 col-md-6">
-                                    <div class="inner-column wow fadeInLeft">
-                                        <h6 class="title">Mangi Niwas</h6>
-                                        <!-- <span>Single Room</span> -->
-                                        <ul class="list-style-two">
-                                            <li><i class="icon fa fa-circle-check"></i>Pick & Drop Service</li>
-                                            <li><i class="icon fa fa-circle-check"></i>Plunge Pool</li>
-                                            <li><i class="icon fa fa-circle-check"></i>City Tour Guide</li>
-                                            <li><i class="icon fa fa-circle-check"></i>Fibre Internet</li>
-
-                                        </ul>
-                                        <a href="page-pricing.html" class="book-now">Book Now</a>
-                                    </div>
-                                </div>
-                                <div class="image-column col-lg-8 col-md-6">
-                                    <div class="image-box">
-                                        <figure class="image wow fadeInUp"><img src="images/other/mangi_niwas.JPG" /></figure>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="pricing-block-two col-sm-6">
-                        <div class="inner-box">
-                            <div class="row">
-                                <div class="content-column col-lg-4 col-md-6">
-                                    <div class="inner-column wow fadeInLeft">
-                                        <h6 class="title">Gulab Nadi</h6>
-                                        <!-- <span>Double Room</span> -->
-                                        <ul class="list-style-two">
-                                            <li><i class="icon fa fa-circle-check"></i>Pick & Drop Service</li>
-                                            <li><i class="icon fa fa-circle-check"></i>Breakfast</li>
-                                            <li><i class="icon fa fa-circle-check"></i>City Tour Guide</li>
-                                            <li><i class="icon fa fa-circle-check"></i>Fibre Internet</li>
-                                        </ul>
-                                        <a href="page-pricing.html" class="book-now">Book Now</a>
-                                    </div>
-                                </div>
-                                <div class="image-column col-lg-8 col-md-6">
-                                    <div class="image-box">
-                                        <figure class="image wow fadeInUp"><img src="images/other/gulab_nadi.JPG" /></figure>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
-        <section class="food-section pt-0">
-            <div class="auto-container">
-                <div class="row">
-                    <div class="image-column col-xl-4 col-lg-4">
-                        <div class="inner-column">
-                            <div class="image-box">
-                                <figure class="image wow fadeInUp"><img src="images/other/new_about.JPG"></figure>
-                            </div>
-
-
-                        </div>
-                    </div>
-                    <div class="content-column col-xl-8">
-                        <div class="inner-column">
-                            <div class="sec-title"> <span class="sub-title">EAT FROM THE LAND</span>
-                                <h2>Enjoy Food and Even<br> Better Hospitality</h2>
-                                <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt<br> ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo <br> viverra maecenas accumsan lacus
-                                    vel facilisis. </div>
-                                <div class="healthy-food">
-                                    <div class="food-list">
-                                        <h4 class="title">Restaurant</h4>
-                                        <ul>
-                                            <li><i class="fa-regular fa-square-check"></i>Healthy Food</li>
-                                            <li><i class="fa-regular fa-square-check"></i>Traditional Food Serving</li>
-                                            <li><i class="fa-regular fa-square-check"></i>Individually Styled Bedrooms</li>
-                                        </ul>
-                                    </div>
-
-                                </div>
-                                <div class="image-box">
-                                    <figure class="image overlay-anim"><img src="images/other/food1.jpg"></figure>
-                                    <figure class="image overlay-anim"><img src="images/other/food2.jpg"></figure>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
-        <section class="call-to-action pt-0">
-            <div class="auto-container">
-                <div class="row">
-                    <div class="content-colum col-lg-6 col-md-12 col-sm-12">
-                        <div class="inner-column wow fadeInLeft">
-                            <div class="sec-title"> <span class="sub-title">Call to action</span>
-                                <h2>The Thin Escape.</h2>
-                            </div>
-
-                            <div class="call-block">
-                                <div class="inner-box">
-                                    <div class="icon-box"> <i class="flaticon-airplane"></i> </div>
-                                    <h4 class="title">Easy & Free Transport</h4>
-                                    <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br> eiusmod tempor incididunt dolore magna aliqua.</div>
-                                </div>
-                            </div>
-
-                            <div class="call-block">
-                                <div class="inner-box">
-                                    <div class="icon-box"> <i class="flaticon-fast-food"></i> </div>
-                                    <h4 class="title">Clean & Fresh Food</h4>
-                                    <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br> eiusmod tempor incididunt dolore magna aliqua.</div>
-                                </div>
-                            </div>
-
-                            <div class="call-block">
-                                <div class="inner-box">
-                                    <div class="icon-box"> <i class="flaticon-swimming-pool-1"></i> </div>
-                                    <h4 class="title">Play Ground & Swimming Pool</h4>
-                                    <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br> eiusmod tempor incididunt dolore magna aliqua.</div>
-                                </div>
-                            </div>
-                            <!-- <div class="btn-box"> <a href class="read-more">Book A Hotel</a> </div> -->
-                        </div>
-                    </div>
-                    <div class="col-lg-6 booking-form-column">
-                        <div class="inner-column wow fadeInRight" data-wow-delay="200ms">
-                            <div class="sec-title"> <span class="sub-title">ROOMS & SUITES</span>
-                                <h2>Booking </h2>
-                            </div>
-                            <form class="bk-form">
-                                <div class="frm-field">
-                                    <input type="text" name="check-in" class="date-pick" placeholder="Check in" />
-                                </div>
-                                <div class="frm-field">
-                                    <input type="text" name="check-in" class="date-pick" placeholder="Check out" />
-                                </div>
-                                <div class="frm-field">
-                                    <input type="text" name="check-in" class="input" style="color: white;" placeholder="Adults" />
-                                </div>
-                                <div class="frm-field">
-                                    <input type="text" name="check-in" class="input" style="color: white;" placeholder="Children" />
-                                </div>
-                                <div class="form-submit">
-                                    <button type="submit">Enquire</button>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="client-section">
-            <div class="bg bg-image" style="background-image: url(images/other/testi.jpg); filter: brightness(50%);"></div>
-            <div class="auto-container">
-                <div class="sec-title light text-center"> <span class="sub-title">What says for customer</span>
-                    <h2>What Client's Say?</h2>
-                </div>
-                <div class="row">
-
-                    <div class="client-block col-lg-4 col-sm-6">
-                        <div class="inner-box wow fadeInLeft">
-                            <h4 class="title">Jina Nillson</h4>
-                            <span>Founder of Webflex</span>
-                            <div class="image-box">
-                                <figure class="image wow fadeInUp"><img data-cfsrc="images/resource/client.jpg" alt style="display:none;visibility:hidden;"><noscript><img src="images/resource/client.jpg" alt></noscript></figure>
-                                <i class="icon fa fa-circle-check"></i>
-                            </div>
-                            <div class="text">Upon they're seasons green day beast<br>without form man be firmament years shall<br>the appear moveth signs had.</div>
-                        </div>
-                    </div>
-
-                    <div class="client-block col-lg-4 col-sm-6">
-                        <div class="inner-box wow fadeInLeft" data-wow-delay="200ms">
-                            <h4 class="title">Donald Browfish</h4>
-                            <span>Founder of Webflex</span>
-                            <div class="image-box">
-                                <figure class="image wow fadeInUp"><img data-cfsrc="images/resource/client-2.jpg" alt style="display:none;visibility:hidden;"><noscript><img src="images/resource/client-2.jpg" alt></noscript></figure>
-                                <i class="icon fa fa-circle-check"></i>
-                            </div>
-                            <div class="text">Upon they're seasons green day beast<br>without form man be firmament years shall<br>the appear moveth signs had.</div>
-                        </div>
-                    </div>
-
-                    <div class="client-block col-lg-4 col-sm-6">
-                        <div class="inner-box wow fadeInLeft" data-wow-delay="300ms">
-                            <h4 class="title">Robotor Doses</h4>
-                            <span>Founder of Webflex</span>
-                            <div class="image-box">
-                                <figure class="image wow fadeInUp"><img data-cfsrc="images/resource/client-3.jpg" alt style="display:none;visibility:hidden;"><noscript><img src="images/resource/client-3.jpg" alt></noscript></figure>
-                                <i class="icon fa fa-circle-check"></i>
-                            </div>
-                            <div class="text">Upon they're seasons green day beast<br>without form man be firmament years shall<br>the appear moveth signs had.</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
-        <section class="offer-banner wow slideInUp">
-            <div class="auto-container">
-                <div class="outer-box" style="background-color: black;">
-                    <div class="row">
-
-                        <div class="content-colum col-lg-8 col-md-12 col-sm-12">
-                            <div class="inner-column">
-                                <div class="content-box">
-                                    <!-- <span>Risus commodo viverra accumsan lacus vel facilisis. </span> -->
-                                    <h6 class="title">Special Holiday Offer</h6>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="btn-column col-lg-4 col-md-12 col-sm-12">
-                            <div class="inner-column"> <a href="page-contact.html" class="read-more">Book Now</a> </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
-
-
-        <footer class="main-footer footer-style-two">
-
-            <div class="widgets-section">
-                <div class="auto-container">
-                    <div class="row">
-
-                        <div class="footer-column col-lg-4 col-sm-6">
-                            <div class="footer-widget about-widget wow fadeInLeft">
-                                <div class="widget-content">
-                                    <div class="logo">
-                                        <a href="#"> <img data-cfsrc="images/logo-2.png" alt title style="display:none;visibility:hidden;"><noscript><img src="images/logo-2.png" alt title></noscript></a>
-                                    </div>
-                                    <div class="text">Welcome to the best five-star deluxe<br> hotel in New York. Hotel elementum<br>sesue the aucan volutpat.</div>
-                                    <ul class="social-icon-two">
-                                        <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-                                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                        <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                                        <li><a href="#"><i class="fab fa-youtube"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="footer-column col-lg-4 col-sm-6 mb-0 ">
-                            <div class="footer-widget links-widget wow fadeInLeft" data-wow-delay="200ms">
-                                <h4 class="widget-title">Services Links</h4>
-                                <div class="widget-content">
-                                    <ul class="user-links">
-                                        <li><a href="#"><i class="fa-solid fa-crosshairs"></i>Home</a></li>
-                                        <li><a href="#"><i class="fa-solid fa-crosshairs"></i>Restaurant</a></li>
-
-                                        <li><a href="#"><i class="fa-solid fa-crosshairs"></i>About</a></li>
-                                    </ul>
-                                    <ul class="user-links">
-                                        <li><a href="#"><i class="fa-solid fa-crosshairs"></i>Rooms</a></li>
-
-
-                                        <li><a href="#"><i class="fa-solid fa-crosshairs"></i>Gallery</a></li>
-                                        <li><a href="#"><i class="fa-solid fa-crosshairs"></i>Contact</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-
-
-
-                        <div class="footer-column col-lg-4 col-sm-6">
-                            <div class="footer-widget blog-widget wow fadeInLeft" data-wow-delay="400ms">
-                                <h4 class="widget-title">Information</h4>
-                                <div class="widget-content">
-
-                                    <article class="recent-post">
-                                        <div class="inner">
-                                            <div class="post-info"><i class="fas fa-phone"></i> 1800-121-3637<br> +91-7052-101-786</div>
-                                            <div class="post-info"><i class="fa fa-envelope"></i> <a href="https://html.kodesolution.com/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="a4cdcac2cbe4c1dcc5c9d4c8c18ac7cbc9">[email&#160;protected]</a></div>
-                                            <div class="post-info"><i class="fas fa-location"></i> 1247/Plot No. 39, 15th Phase, <br>United States of America</div>
-                                        </div>
-                                    </article>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="footer-bottom">
-                <div class="auto-container">
-                    <div class="inner-container">
-                        <div class="copyright-text">© Copyrights reserved.</div>
-                    </div>
-                    <div class="scroll-to-top scroll-to-target" data-target="html"><span class="fa fa-arrow-up"></span></div>
-                </div>
-            </div>
-    </div>
     </footer>
 
-    </div>
+
+
+
+
+
+
     <script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
     <script src="js/jquery.js"></script>
     <script src="js/popper.min.js"></script>

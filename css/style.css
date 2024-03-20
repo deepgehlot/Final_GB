@@ -1,4 +1,4 @@
-@import "https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;family=Gilda+Display&amp;display=swap";
+@import "https://fonts.googleapis.com/css2?family=Montserrat&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap";
 @import "animate.css";
 @import "owl.css";
 @import "jquery.fancybox.min.css";
@@ -24,9 +24,9 @@
     --review-color: #ffc737;
     --link-color: var(--headings-color);
     --link-hover-color: var(--headings-color);
-    --title-font: "Gilda Display", serif;
-    --text-font: "Barlow", sans-serif;
-    --text-font2: "Barlow Condensed", sans-serif;
+    --title-font: "Raleway", serif;
+    --text-font: "Raleway", sans-serif;
+    --text-font2: "Raleway", sans-serif;
     --body-font-size: 16px;
     --body-line-height: 28px;
     --body-font-weight: 400;
@@ -458,14 +458,6 @@ figure.image {
 .large-container {
     position: static;
     max-width: var(--large-container-width);
-    padding: 0 15px;
-    margin: 0 auto;
-    width: 100%;
-}
-
-.auto-container {
-    position: static;
-    max-width: var(--container-width);
     padding: 0 15px;
     margin: 0 auto;
     width: 100%;
@@ -3908,7 +3900,7 @@ section {
 .about-section-two .image-column .inner-column {
     position: relative;
     padding-left: 20px;
-    padding-bottom: 117px;
+    /* padding-bottom: 117px; */
     text-align: right;
 }
 
@@ -7094,12 +7086,11 @@ section {
 
 .main-footer .widgets-section {
     position: relative;
-    padding: 116px 0 30px;
 }
 
 .main-footer .footer-column {
     position: relative;
-    margin-bottom: 50px;
+    margin-bottom: 10px;
 }
 
 .main-footer .footer-widget {
@@ -7552,18 +7543,13 @@ section {
     background-color: var(--theme-color-dark);
 }
 
-.footer-style-two .widgets-section {
-    padding: 106px 0 44px;
-}
-
 .footer-style-two .about-widget {
     margin-top: 14px;
 }
 
 .footer-style-two .about-widget .logo {
     position: relative;
-    margin-bottom: 30px;
-    margin-top: -20px;
+    margin-bottom: 10px;
 }
 
 .footer-style-two .about-widget .text {

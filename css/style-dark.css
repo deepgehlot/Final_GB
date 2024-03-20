@@ -16,27 +16,6 @@
     background-color: var(--dark-color3) !important;
 }
 
-body,
-.page-wrapper,
-.sticky-header,
-.header-style-one,
-.header-style-two .header-lower .logo-box:before,
-.checkout-form-section .checkout-form,
-.service-block .inner-box,
-.pricing-section,
-.booking-form-column .inner-column .bk-form .frm-field input,
-.booking-form-column .inner-column .bk-form .frm-field select,
-.news-block .inner-box .content-box .read-more,
-.client-block .inner-box,
-.offer-banner .outer-box .btn-column .inner-column .read-more,
-.news-block-two .inner-box .content-box .btn-box .read-more,
-.pricing-block-two .inner-box .content-column .inner-column::before,
-.service-section-two,
-.service-block-two .inner-box .image-box .icon-box::before,
-.overlay-anim:before {
-    background-color: var(--dark-color1);
-}
-
 .header-style-two .main-box {
     background-color: transparent;
 }
