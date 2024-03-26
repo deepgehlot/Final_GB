@@ -216,7 +216,7 @@ p a:not(.button):not(.btn):focus {
 }
 
 a {
-    color: var(--link-color);
+    color: #adadad;
     text-decoration: none;
     font-weight: var(--body-font-weight);
     cursor: pointer;
@@ -7022,11 +7022,6 @@ section {
 
 .main-footer {
     position: relative;
-    background-color: var(--bg-theme-color2);
-}
-
-.main-footer .bg {
-    background-size: auto;
 }
 
 .main-footer .footer-bg-1 {
@@ -7086,6 +7081,7 @@ section {
 
 .main-footer .widgets-section {
     position: relative;
+    background-color: #222222;
 }
 
 .main-footer .footer-column {
@@ -7382,11 +7378,25 @@ section {
     display: flex;
 }
 
+.social-icon-two {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
 .footer-style-one .about-widget .social-icon-two li {
     margin-right: 6px;
 }
 
+.social-icon-two li {
+    margin-right: 6px;
+}
+
 .footer-style-one .about-widget .social-icon-two li:last-child {
+    margin-right: 0;
+}
+
+.social-icon-two li:last-child {
     margin-right: 0;
 }
 
@@ -7399,6 +7409,23 @@ section {
     border-radius: 50%;
     border: 1px solid #adadad;
     display: inline-block;
+}
+
+.social-icon-two li a {
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    line-height: 40px;
+    color: #adadad;
+    border-radius: 50%;
+    border: 1px solid #adadad;
+    display: inline-block;
+}
+
+.social-icon-two li a:hover {
+    background-color: var(--theme-color1);
+    border-color: transparent;
+    color: #fff;
 }
 
 .footer-style-one .about-widget .social-icon-two li a:hover {

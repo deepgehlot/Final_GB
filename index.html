@@ -17,87 +17,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-    <style>
-        body {
-            font-family: "Raleway", sans-serif !important;
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-        }
-        
-        footer {
-            margin-top: auto;
-        }
-        
-        @media only screen and (min-width: 1000px) {
-            .container-fluid {
-                width: 80%
-            }
-        }
-        
-        @media only screen and (max-width: 800px) {
-            .bg {
-                width: 100% !important;
-                margin: 0 !important;
-                height: 100% !important;
-            }
-            .column_1 {
-                width: 100%;
-            }
-            .main_video {
-                width: auto !important;
-            }
-        }
-        
-        .raleway-bold {
-            font-family: "Raleway", sans-serif !important;
-            font-optical-sizing: auto;
-            font-weight: 400;
-            font-style: normal;
-        }
-        
-        .raleway-normal {
-            font-family: "Raleway", sans-serif !important;
-            font-optical-sizing: auto;
-            font-weight: 300;
-            font-style: normal;
-            color: black;
-        }
-        /* .parallax {
-           
-            min-height: 100%;
-            width: 100%;
-            background-attachment: fixed;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            z-index: 1;
-        } */
-        
-        .bg {
-            position: absolute;
-            top: calc((100% + 800px) * 0.5);
-            left: 0;
-            height: 70%;
-            width: calc((100% + 600px) * 0.5);
-            background-color: rgba(255, 255, 255, 0.8);
-            margin: 10px calc((100% - 960px) * 0.5);
-            justify-content: center;
-            display: flex;
-            z-index: 1;
-        }
-        
-        .nav-link {
-            font-weight: 600;
-        }
-        
-        .main_video {
-            width: 100%;
-            position: fixed;
-            z-index: 0;
-        }
-    </style>
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
 </head>
 
 <body>
@@ -151,28 +72,31 @@
 
 
 
+
     <video class="main_video" autoplay="autoplay" loop="loop" muted defaultMuted playsinline oncontextmenu="return false;" preload="auto">
             <source src="./images/video1.mp4" type="video/mp4">
         </video>
 
-    <div class="bg">
-        <div class="row p-5">
-            <div class="col-7 col-sm-6 column_1">
-                <h3 class="text-center raleway" style=" color:black;">
-                    Govind Bagh Resort
-                </h3>
-                <p class="raleway-normal" style="text-align: justify;">Far from the maze of heartless city like other resorts in jodhpur, away from the hazardous polluted and mismanaged city life. Govind bagh. The resort offers 10 well equipped historical rajasthani crafted rooms. A visit to, the ethnic resort,
-                    Would be like an unforgettable journey to a dreamland Jodhpuri, the ethnic resort is an ecologically balanced artistic venture that is there in purlieus of nature and has an ethnic beauty about Jodhpur.</p>
+
+
+
+    <footer class="main-footer " style="top: 100vh;">
+        <div class="bg mb-4">
+            <div class="row p-5">
+                <div class="col-7 col-sm-6 column_1">
+                    <h3 class="text-center raleway" style=" color:black;">
+                        Govind Bagh Resort
+                    </h3>
+                    <p class="raleway-normal" style="text-align: justify;">Far from the maze of heartless city like other resorts in jodhpur, away from the hazardous polluted and mismanaged city life. Govind bagh. The resort offers 10 well equipped historical rajasthani crafted rooms. A visit to, the ethnic
+                        resort, Would be like an unforgettable journey to a dreamland Jodhpuri, the ethnic resort is an ecologically balanced artistic venture that is there in purlieus of nature and has an ethnic beauty about Jodhpur.</p>
+                </div>
+                <div class="col-5 col-sm-6 column_1">
+                    <img class="img-fluid" src="./images/banner/gallery11.JPG" style="width: 297px; height: 338px;">
+                </div>
             </div>
-            <div class="col-5 col-sm-6 column_1">
-                <img class="img-fluid" src="./images/banner/gallery11.JPG" style="width: 297px; height: 338px;">
-            </div>
+
         </div>
-
-    </div>
-    <footer class="main-footer footer-style-two" style="top: 160vh;">
-
-        <div class="widgets-section">
+        <div class="widgets-section" style="top: auto; padding: 2%;">
             <div class="container">
                 <div class="row">
 
@@ -250,7 +174,7 @@
     <script src="js/slick-animation.min.js"></script>
     <script src="js/wow.js"></script>
     <script src="js/appear.js"></script>
-    <script src="js/mixitup.js"></script>
+
     <script src="js/flatpickr.js"></script>
     <script src="js/script.js"></script>
 </body>
