@@ -177,7 +177,31 @@
 
     <script src="js/flatpickr.js"></script>
     <script src="js/script.js"></script>
+    <script>
+        window.onload = (event) => {
+            myFunction(event)
+        };
 
+        function myFunction(event) {
+            // alert("Screen Width is: " + screen.width);
+
+            let myvid = document.getElementById("myvid");
+
+            //# if BIGGER THAN the 800 pixels
+            if (screen.width > 800) {
+                myvid.src = "./images/video1.mp4";
+            }
+
+            //# if SMALLER THAN or EQUAL-TO the 800 pixels
+            if (screen.width <= 800) {
+                myvid.src = "./images/other/bg_video.mp4";
+            }
+
+            //# load URL (for playback)
+            myvid.load();
+
+        }
+    </script>
 </body>
 
 </html>
