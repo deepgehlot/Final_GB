@@ -7081,7 +7081,7 @@ section {
 
 .main-footer .widgets-section {
     position: relative;
-    background-color: #222222;
+    background-color: white;
 }
 
 .main-footer .footer-column {
@@ -7095,8 +7095,7 @@ section {
 
 .main-footer .widget-title {
     position: relative;
-    color: var(--theme-color-light);
-    margin-bottom: 22px;
+    color: #222222 margin-bottom: 22px;
 }
 
 .main-footer .widget-content {
@@ -7104,7 +7103,7 @@ section {
 }
 
 .main-footer .widget-content .text {
-    color: var(--theme-color-light);
+    color: #222222
 }
 
 .user-links {
@@ -7197,7 +7196,7 @@ section {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    color: #adadad;
+    color: #222222;
     line-height: 30px;
     margin-bottom: 23px;
     padding-left: 25px;
@@ -7209,7 +7208,7 @@ section {
     left: 0;
     font-size: 14px;
     margin-right: 10px;
-    color: var(--theme-color1);
+    color: #222222;
 }
 
 .recent-post .inner .post-title {
