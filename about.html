@@ -73,7 +73,7 @@
 
 
     <!-- <img src="./images/banner/Banner_about_us.JPG" class="main_video" /> -->
-    <video class="main_video" autoplay="autoplay" loop="loop" muted defaultMuted playsinline oncontextmenu="return false;" preload="auto">
+    <video class="main_video" id="myvid" autoplay="autoplay" loop="loop" muted defaultMuted playsinline oncontextmenu="return false;" preload="auto">
             <source src="./images/other/bg_video.mp4" type="video/mp4">
         </video>
 
@@ -194,11 +194,35 @@
     <script src="js/mixitup.js"></script>
     <script src="js/flatpickr.js"></script>
     <script src="js/script.js"></script>
-</body>
 
-</html>ript src="js/mixitup.js"></script>
-<script src="js/flatpickr.js"></script>
-<script src="js/script.js"></script>
+
+    <script>
+        window.onload = (event) => {
+            myFunction(event)
+        };
+
+        function myFunction(event) {
+            // alert("Screen Width is: " + screen.width);
+
+            let myvid = document.getElementById("myvid");
+
+            //# if BIGGER THAN the 800 pixels
+            if (screen.width > 800) {
+                myvid.src = "./images/other/bg_video.mp4";
+            }
+
+            //# if SMALLER THAN or EQUAL-TO the 800 pixels
+            if (screen.width <= 800) {
+                myvid.src = "./images/other/mobile.mp4";
+            }
+
+            //# load URL (for playback)
+            myvid.load();
+
+        }
+    </script>
+    <script src="js/flatpickr.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
